@@ -1,0 +1,1563 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  box-sizing: border-box; }
+
+/* line 18, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/**
+ * Remove default margin.
+ */
+/* line 26, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 52, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 64, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 74, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 85, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 96, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 106, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 117, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 126, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 134, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 143, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 161, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 170, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 177, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 181, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 192, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 200, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 211, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 219, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 228, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 239, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 263, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 273, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 285, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 300, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 310, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 319, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 329, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 342, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 354, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 363, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 375, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 383, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 394, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 403, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 412, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 423, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 429, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 203, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/bower_components/typesettings/_typesettings.scss */
+html {
+  font-size: 112.5%; }
+
+/* line 207, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/bower_components/typesettings/_typesettings.scss */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_classes.scss */
+.intrinsic-wrapper, .video-container {
+  /*
+    This element must maintain position: relative.
+    The padding-bottom creates the proper ratio.
+    Examples:
+        4:3 = padding-bottom: 75%;
+        16:9 = padding-bottom: 56.25%;
+        (does not necessarily have to be "common ratios",
+        it can be based off image dimensions of the design)
+   */
+  height: 0;
+  /*padding-bottom: 75%; // if this is a global class, you do not want to define this property. Do it in another class, example .ratio--4x3 */
+  position: relative; }
+
+/* line 18, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_classes.scss */
+.intrinsic-wrapper-element, .video-container iframe {
+  /*
+    This class needs no further customization,
+    if this class is applied to the elemtent and is contained
+    within .intrinsic > .intrinsic__wrapper > *current element*
+    the element should scale in correct perspective
+   */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_mixins-functions.scss */
+.ratio-16x9, .video-container {
+  padding-bottom: 56.25%; }
+
+/* line 35, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_classes.scss */
+.img-responsive, .article--post img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/* line 41, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_classes.scss */
+.alt-txt {
+  color: #949494; }
+  /* line 44, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_classes.scss */
+  .alt-txt.h1, .alt-txt.dek--intro, .alt-txt.heading--page, .alt-txt.section--id {
+    border-top: 1px solid #282832; }
+
+/* line 49, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/helpers/_classes.scss */
+.align-center {
+  text-align: center; }
+
+/* line 21, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 910.5px) {
+    .container {
+      width: 730px; } }
+  @media (min-width: 1080.5px) {
+    .container {
+      width: 900px; } }
+  @media (min-width: 1280.5px) {
+    .container {
+      width: 1100px; } }
+
+/* line 38, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.row {
+  position: relative; }
+  @media (min-width: 910.5px) {
+    .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+
+/* line 47, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-1 {
+  -webkit-flex-basis: 14.28571429%;
+      -ms-flex-preferred-size: 14.28571429%;
+          flex-basis: 14.28571429%; }
+  @media (min-width: 910.5px) {
+    .col-1 {
+      max-width: 14.28571429%; } }
+
+/* line 55, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-2 {
+  -webkit-flex-basis: 28.57142857%;
+      -ms-flex-preferred-size: 28.57142857%;
+          flex-basis: 28.57142857%; }
+  @media (min-width: 910.5px) {
+    .col-2 {
+      max-width: 28.57142857%; } }
+
+/* line 63, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-3 {
+  -webkit-flex-basis: 42.85714286%;
+      -ms-flex-preferred-size: 42.85714286%;
+          flex-basis: 42.85714286%; }
+  @media (min-width: 910.5px) {
+    .col-3 {
+      max-width: 42.85714286%; } }
+
+/* line 71, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-4 {
+  -webkit-flex-basis: 57.14285714%;
+      -ms-flex-preferred-size: 57.14285714%;
+          flex-basis: 57.14285714%; }
+  @media (min-width: 910.5px) {
+    .col-4 {
+      max-width: 57.14285714%; } }
+
+/* line 79, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-5 {
+  -webkit-flex-basis: 71.42857143%;
+      -ms-flex-preferred-size: 71.42857143%;
+          flex-basis: 71.42857143%; }
+  @media (min-width: 910.5px) {
+    .col-5 {
+      max-width: 71.42857143%; } }
+
+/* line 86, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-6 {
+  -webkit-flex-basis: 85.71428571%;
+      -ms-flex-preferred-size: 85.71428571%;
+          flex-basis: 85.71428571%; }
+  @media (min-width: 910.5px) {
+    .col-6 {
+      max-width: 85.71428571%; } }
+
+/* line 93, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-7 {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+  @media (min-width: 910.5px) {
+    .col-7 {
+      max-width: 100%; } }
+
+/* line 100, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_grid.scss */
+.col-half {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+  @media (min-width: 910.5px) {
+    .col-half {
+      max-width: 50%; } }
+
+/* line 2, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 7, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+::-moz-selection {
+  background-color: #fefac1; }
+::selection {
+  background-color: #fefac1; }
+
+/* line 11, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+body {
+  padding: 0;
+  font-family: 'Leitura News W01', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  color: #282832;
+  margin: auto;
+  -webkit-font-kerning: normal;
+     -moz-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-font-variant-ligatures: common-ligatures;
+     -moz-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  background-color: #fff; }
+
+/* line 27, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+h1, .h1, .dek--intro, .heading--page, .section--id, h2, .h2, .entry-heading--category, h3, .h3, h4, .h4, h5, .h5, .section--heading, h6, .h6 {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Neue Haas Grotesk W01 Disp', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility; }
+  /* line 35, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+  h1 a:link, .h1 a:link, .dek--intro a:link, .heading--page a:link, .section--id a:link, h2 a:link, .h2 a:link, .entry-heading--category a:link, h3 a:link, .h3 a:link, h4 a:link, .h4 a:link, h5 a:link, .h5 a:link, .section--heading a:link, h6 a:link, .h6 a:link {
+    text-decoration: none;
+    font-weight: 700; }
+
+/* line 51, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+h1, .h1, .dek--intro, .heading--page, .section--id {
+  margin-bottom: 0.14069534em;
+  font-size: 1.776889em;
+  line-height: 1.12556271; }
+  @media (min-width: 600px) {
+    h1, .h1, .dek--intro, .heading--page, .section--id {
+      margin-bottom: 0.15836143em;
+      font-size: 3.15733452em;
+      line-height: 1.10852999; } }
+
+/* line 61, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+h2, .h2, .entry-heading--category {
+  margin-bottom: 0.18754689em;
+  font-size: 1.333em;
+  line-height: 1.12528132; }
+
+/* line 66, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+h3, .h3 {
+  margin-bottom: 0.37509377em;
+  font-size: 1.333em;
+  line-height: 1.12528132; }
+  @media (min-width: 910.5px) {
+    h3, .h3 {
+      margin-bottom: 0.28139068em;
+      font-size: 1.776889em;
+      line-height: 1.12556271; } }
+
+/* line 76, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+h4, .h4 {
+  margin-bottom: 0.25em;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 82, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+h5, .h5, .section--heading, h6, .h6 {
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 88, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+a, a:link {
+  color: #000;
+  font-weight: 600; }
+
+/* line 93, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+a:visited {
+  color: #282832; }
+
+/* line 97, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+a:hover {
+  color: #1893d8; }
+
+/* line 101, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+a:active {
+  color: #09354e; }
+
+/* line 105, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* line 119, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+small, .font-small {
+  font-size: 0.75018755em;
+  line-height: 1.9995; }
+
+/* line 123, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+em {
+  font-style: italic; }
+
+/* line 127, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+strong {
+  font-weight: bold; }
+
+/* line 131, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+figure {
+  margin: 0;
+  position: relative; }
+
+/* line 136, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+figcaption {
+  margin-top: 9px;
+  color: gray;
+  font-weight: 400;
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.75018755em;
+  line-height: 1.333; }
+
+/* line 144, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  font-family: 'Leitura W01 Display', Georgia, 'Times New Roman', serif; }
+  /* line 152, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+  blockquote p {
+    font-weight: 600;
+    margin-bottom: 0.28139068em;
+    text-indent: -13.5px;
+    padding-left: 9px;
+    font-size: 1.776889em;
+    line-height: 1.12556271; }
+  /* line 160, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+  blockquote footer {
+    color: gray;
+    font-weight: 400;
+    font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.75018755em;
+    line-height: 1.333; }
+    /* line 166, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+    blockquote footer strong {
+      font-weight: 400; }
+    /* line 169, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+    blockquote footer cite {
+      font-style: normal; }
+      /* line 171, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+      blockquote footer cite:before {
+        content: " – "; }
+
+/* line 179, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+blockquote.left, blockquote.right {
+  padding-top: 1em;
+  border-top: 18px solid #282832;
+  width: 50%; }
+  /* line 184, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+  blockquote.left p, blockquote.right p {
+    margin-bottom: 0.37509377em;
+    text-indent: -13.5px;
+    font-size: 1.333em;
+    line-height: 1.12528132; }
+
+/* line 191, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+blockquote.left {
+  float: left;
+  margin-right: 1.5em;
+  margin-left: -13.5px; }
+
+/* line 198, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+pre, code {
+  font-family: Menlo, Monaco, monospace;
+  font-size: 0.75018755em;
+  background-color: #eaeaee;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  margin: 0; }
+
+/* line 209, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 3em; }
+
+/* line 220, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+ul ul, ol ol, dl dl {
+  margin-bottom: 0; }
+
+/* line 224, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+ul {
+  list-style: disc; }
+
+/* line 228, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+ol {
+  list-style: decimal; }
+
+/* line 233, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase; }
+
+/* line 240, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+abbr[title]:hover {
+  cursor: help; }
+
+/* line 244, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+mark {
+  background: #fefac1; }
+
+/* line 250, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+hr {
+  margin-top: 2em;
+  margin-bottom: 0;
+  border: none;
+  border-top-color: #949494;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 1.44444444em; }
+
+/* line 259, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+table {
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+/* line 277, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+th, td {
+  padding: 9px 9px;
+  text-align: left;
+  border-bottom: 1px solid #949494; }
+
+/* line 284, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+th:first-child, td:first-child {
+  padding-left: 0; }
+
+/* line 289, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+th:last-child, td:last-child {
+  padding-right: 0; }
+
+/* line 293, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+form p {
+  margin-bottom: 0; }
+
+/* line 311, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], textarea, select {
+  height: 36px;
+  padding: 6px 9px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #c0c0cc;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  vertical-align: middle; }
+
+/* Removes awkward default styles on some inputs for iOS */
+/* line 331, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 337, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+textarea {
+  min-height: 81px;
+  padding-top: 9px;
+  padding-bottom: 9px; }
+
+/* line 357, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, textarea:focus, select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+/* line 363, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+label, legend {
+  color: gray;
+  display: block;
+  font-weight: 400;
+  font-family: 'Leitura News W01', Georgia, 'Times New Roman', serif;
+  margin-bottom: 0.6665em;
+  font-size: 0.75018755em;
+  line-height: 1.9995; }
+
+/* line 372, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+/* line 378, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline; }
+
+/* line 382, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_elements.scss */
+input[type="file"] {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_highlight.scss */
+.highlight {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: auto; }
+  /* line 8, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_highlight.scss */
+  .highlight td {
+    border-bottom: none; }
+  /* line 12, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_highlight.scss */
+  .highlight td {
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 17, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_highlight.scss */
+  .highlight pre {
+    background-color: transparent; }
+  /* line 21, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_highlight.scss */
+  .highlight .gutter {
+    color: gray;
+    text-align: right;
+    width: 1.9995em;
+    border-right: 1px solid #949494; }
+  /* line 28, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_highlight.scss */
+  .highlight .code {
+    padding-left: 0.5em; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_video-container.scss */
+.video-container {
+  margin-bottom: 1.5em; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+.article--body p:first-of-type:first-line {
+  font-weight: 600; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+.article--body p:last-of-type:first-line {
+  font-weight: 400; }
+
+/* line 9, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+.article--body > p:last-child:after {
+  content: '\25c6'; }
+
+/* line 22, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+.article--post {
+  position: relative;
+  margin-bottom: 4.5em; }
+  /* line 26, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+  .article--post header {
+    margin-bottom: 1.5em; }
+  /* line 30, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+  .article--post img {
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 36, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+  .article--post figure {
+    margin-bottom: 1.5em; }
+
+/* line 41, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+.article--header {
+  margin-bottom: 4.5em;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 910.5px) {
+    .article--header {
+      max-width: 100%; } }
+  @media (min-width: 1080.5px) {
+    .article--header {
+      margin-left: 14.28571429%;
+      max-width: 85.71428571%; } }
+  @media (min-width: 1280.5px) {
+    .article--header {
+      margin-left: 14.28571429%;
+      max-width: 71.42857143%; } }
+
+/* line 61, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_article.scss */
+.article--body {
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 910.5px) {
+    .article--body {
+      max-width: 85.71428571%; } }
+  @media (min-width: 1080.5px) {
+    .article--body {
+      margin-left: 14.28571429%;
+      max-width: 71.42857143%; } }
+  @media (min-width: 1280.5px) {
+    .article--body {
+      margin-left: 14.28571429%;
+      max-width: 57.14285714%; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_dek.scss */
+.dek--lg {
+  font-style: italic;
+  margin-bottom: 0.37509377em;
+  font-size: 1.333em;
+  line-height: 1.31282821; }
+
+/* line 7, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_dek.scss */
+.dek--sm {
+  margin-bottom: 0;
+  font-size: 0.75018755em;
+  line-height: 1.333; }
+
+/* line 12, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_dek.scss */
+.dek--intro {
+  margin-bottom: 124.5px;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 600px) and (max-width: 909.5px) {
+    .dek--intro {
+      font-size: 2.36859304em;
+      line-height: 1.05547891; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_byline.scss */
+.byline {
+  color: gray;
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  /* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_byline.scss */
+  .byline span {
+    font-weight: 600;
+    color: #282832; }
+
+/* line 3, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--link {
+  text-transform: capitalize; }
+  /* line 7, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+  .meta--link:link, .meta--link:visited {
+    text-decoration: none;
+    color: #282832; }
+  /* line 12, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+  .meta--link:hover {
+    text-decoration: underline; }
+  /* line 16, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+  .meta--link:active {
+    color: gray; }
+
+/* line 21, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--txt {
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0.33325em;
+  font-size: 0.75018755em;
+  line-height: 1.333; }
+
+/* line 27, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--heading {
+  border-top: 1px solid #282832;
+  padding-top: 0.6665em; }
+  @media (min-width: 1080.5px) {
+    .meta--heading {
+      margin-bottom: 3.999em; } }
+
+/* line 36, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.section--posts .meta--heading {
+  margin-bottom: 3.999em; }
+
+/* line 40, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--container-post {
+  -webkit-flex-basis: 42.85714286%;
+      -ms-flex-preferred-size: 42.85714286%;
+          flex-basis: 42.85714286%; }
+  @media (min-width: 910.5px) {
+    .meta--container-post {
+      max-width: 42.85714286%; } }
+  @media (min-width: 1080.5px) {
+    .meta--container-post {
+      -webkit-flex-basis: 28.57142857%;
+          -ms-flex-preferred-size: 28.57142857%;
+              flex-basis: 28.57142857%;
+      max-width: 28.57142857%; } }
+
+/* line 54, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--container {
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+
+@media (min-width: 1080.5px) {
+  .meta--container-post:first-child {
+    margin-left: 14.28571429%; } }
+
+@media (min-width: 1080.5px) {
+  .meta--container-post:last-child {
+    margin-left: 28.57142857%; } }
+
+/* line 71, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--primary {
+  font-weight: 600; }
+
+/* line 75, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_meta.scss */
+.meta--alt {
+  font-weight: 400;
+  color: gray; }
+
+@media (min-width: 600px) {
+  .meta--post--l {
+    min-height: 249px; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav ul {
+  list-style: none;
+  padding-left: 0; }
+
+/* line 6, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav a {
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  vertical-align: text-top;
+  font-size: 0.75018755em;
+  line-height: 1.333; }
+
+/* line 13, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--post-heading {
+  padding-top: 0.6665em;
+  margin-bottom: 0.33325em;
+  font-size: 0.75018755em;
+  line-height: 1.333; }
+
+/* line 19, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--post-heading {
+  border-top: 1px solid #333; }
+
+/* line 23, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--post-button {
+  -webkit-flex-basis: 14.28571429%;
+      -ms-flex-preferred-size: 14.28571429%;
+          flex-basis: 14.28571429%;
+  max-width: 14.28571429%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+
+/* line 30, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--post-button a {
+  display: block;
+  padding-top: 0.5em;
+  border-top: none; }
+  @media (min-width: 910.5px) {
+    .nav--post-button a {
+      border-top: 1px solid #333; } }
+
+/* line 41, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--prev, .nav--next {
+  -webkit-flex-basis: 28.57142857%;
+      -ms-flex-preferred-size: 28.57142857%;
+          flex-basis: 28.57142857%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 910.5px) {
+    .nav--prev, .nav--next {
+      max-width: 28.57142857%; } }
+
+@media (min-width: 910.5px) {
+  .nav--next {
+    margin-left: 14.28571429%; } }
+
+/* line 56, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--prev + .nav--post-button {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-bottom: 13.5px; }
+
+/* line 61, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--menu {
+  padding-right: 13.5px;
+  padding-left: 13.5px; }
+  @media (min-width: 600px) {
+    .nav--menu {
+      position: fixed;
+      background-color: #fff;
+      width: 167px;
+      padding-left: 27px;
+      padding-right: 13.5px;
+      bottom: 0;
+      top: 0; } }
+
+/* line 76, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+.nav--menu nav {
+  max-height: 0;
+  overflow-y: hidden; }
+  @media (min-width: 600px) {
+    .nav--menu nav {
+      max-height: none; } }
+
+/* line 85, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_nav.scss */
+nav.is-open {
+  max-height: none; }
+
+/* line 6, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"], input[type="file"] {
+  display: inline-block;
+  height: 36px;
+  padding: 0 27px;
+  color: gray;
+  text-align: center;
+  font-size: 0.75018755em;
+  font-weight: 400;
+  line-height: 36px;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  vertical-align: middle; }
+
+/* line 29, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button.button--primary, button.button--primary, input[type="submit"].button--primary, input[type="reset"].button--primary, input[type="button"].button--primary, input[type="file"].button--primary {
+  color: #fff;
+  background-color: #282832;
+  border: 1px solid #282832; }
+
+/* line 40, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button.button--primary:hover, button.button--primary:hover, input[type="submit"].button--primary:hover, input[type="reset"].button--primary:hover, input[type="button"].button--primary:hover, input[type="file"].button--primary:hover {
+  color: #e6e6e6;
+  background-color: #111116;
+  border: 1px solid #111116; }
+
+/* line 51, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button.button--primary:active, button.button--primary:active, input[type="submit"].button--primary:active, input[type="reset"].button--primary:active, input[type="button"].button--primary:active, input[type="file"].button--primary:active {
+  color: #cccccc; }
+
+/* line 64, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  color: #282832;
+  border-color: #888;
+  outline: 0; }
+
+/* line 70, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button--link {
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.75018755em;
+  line-height: 1.333; }
+  /* line 75, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+  .button--link:link, .button--link:visited {
+    color: gray;
+    text-decoration: none; }
+  /* line 80, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+  .button--link:hover {
+    text-decoration: underline; }
+  /* line 84, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+  .button--link:active {
+    color: #282832; }
+
+/* line 89, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button--menu {
+  font-size: 1.776889em;
+  padding: 0 9px;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-right: 9px;
+  border: none;
+  width: 38px; }
+  @media (min-width: 600px) {
+    .button--menu {
+      display: none; } }
+
+/* line 102, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.button--menu-close {
+  display: none; }
+
+/* line 106, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.is-active .button--menu-close {
+  display: inline; }
+
+/* line 110, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_button.scss */
+.is-active .button--menu-open {
+  display: none; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_heading.scss */
+.heading--page {
+  font-family: 'Leitura W01 Display', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  margin-bottom: 40.5px; }
+  @media (min-width: 600px) {
+    .heading--page {
+      min-height: 249px;
+      margin-bottom: 0; } }
+  @media (min-width: 1080.5px) {
+    .heading--page {
+      max-width: 85.71428571%; } }
+
+@media (min-width: 600px) and (max-width: 909.5px) {
+  .heading--home {
+    font-size: 2.36859304em;
+    line-height: 1.05547891; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_site-header.scss */
+.site-header {
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-top: 9px solid #282832;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13.5px; }
+  @media (min-width: 600px) {
+    .site-header {
+      min-height: 249px;
+      display: block;
+      margin-bottom: 0;
+      margin-top: 27px; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_site-title.scss */
+.site-title {
+  margin-right: 9px; }
+  @media (min-width: 600px) {
+    .site-title {
+      margin-right: 0; } }
+
+/* line 9, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_site-title.scss */
+.site-title--name {
+  font-family: 'Neue Haas Grotesk W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  font-size: 0.75018755em;
+  line-height: 1.9995; }
+  @media (min-width: 600px) {
+    .site-title--name {
+      margin-bottom: 6.665em; } }
+
+/* line 19, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_site-title.scss */
+.site-title--name a {
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: sub; }
+  @media (min-width: 600px) {
+    .site-title--name a {
+      vertical-align: baseline; } }
+
+/* line 30, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_site-title.scss */
+.site-title--sub {
+  color: gray;
+  margin-bottom: 0;
+  font-size: 0.75018755em;
+  line-height: 1.9995; }
+  @media (min-width: 600px) {
+    .site-title--sub {
+      border-bottom: 1px solid #282832; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_entry.scss */
+.entry {
+  margin-bottom: 3em; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_entry.scss */
+.entry--post {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 910.5px) {
+    .entry--post {
+      max-width: 50%; } }
+
+/* line 15, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_entry.scss */
+.entry--media {
+  display: block; }
+
+/* line 19, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_entry.scss */
+.entry--category-container {
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 1080.5px) {
+    .entry--category-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+      max-width: 50%; } }
+
+/* line 30, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_entry.scss */
+.entry--category {
+  border-bottom: 1px solid #282832; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_media.scss */
+.media--entry {
+  margin-bottom: 0.5em;
+  width: 100%; }
+
+@media (min-width: 910.5px) {
+  .media-full {
+    width: 730px;
+    margin-left: -13.5px; } }
+@media (min-width: 1080.5px) {
+  .media-full {
+    width: 900px;
+    margin-left: -142px; } }
+@media (min-width: 1280.5px) {
+  .media-full {
+    width: 1100px;
+    margin-left: -170px; } }
+
+/* line 24, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_media.scss */
+.media-full figcaption {
+  margin-top: 9px; }
+  @media (min-width: 1280.5px) {
+    .media-full figcaption {
+      position: absolute;
+      right: 0;
+      padding-left: 27px;
+      padding-right: 13.5px;
+      max-width: 28.57142857%; } }
+
+/* line 37, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_media.scss */
+.article--post .media-small {
+  float: right;
+  padding-left: 27px;
+  max-width: 50%; }
+  @media (min-width: 1280.5px) {
+    .article--post .media-small {
+      position: absolute;
+      right: 0;
+      padding-right: 13.5px;
+      width: 28.57142857%; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_section.scss */
+.section--id {
+  color: #949494; }
+  @media (min-width: 910.5px) {
+    .section--id {
+      border-top: 1px solid #282832; } }
+
+/* line 10, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_section.scss */
+.section--id--l {
+  -webkit-flex-basis: 14.28571429%;
+      -ms-flex-preferred-size: 14.28571429%;
+          flex-basis: 14.28571429%;
+  max-width: 14.28571429%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+
+/* line 17, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_section.scss */
+.section--posts {
+  -webkit-flex-basis: 85.71428571%;
+      -ms-flex-preferred-size: 85.71428571%;
+          flex-basis: 85.71428571%; }
+  @media (min-width: 1080.5px) {
+    .section--posts {
+      max-width: 85.71428571%; } }
+
+/* line 25, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_section.scss */
+.section--heading {
+  -webkit-flex-basis: 14.28571429%;
+      -ms-flex-preferred-size: 14.28571429%;
+          flex-basis: 14.28571429%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 1080.5px) {
+    .section--heading {
+      margin-left: 14.28571429%; } }
+
+/* line 36, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_section.scss */
+.section--body {
+  -webkit-flex-basis: 57.14285714%;
+      -ms-flex-preferred-size: 57.14285714%;
+          flex-basis: 57.14285714%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_newsletter.scss */
+.newsletter--l {
+  -webkit-flex-basis: 42.85714286%;
+      -ms-flex-preferred-size: 42.85714286%;
+          flex-basis: 42.85714286%;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  margin-bottom: 13.5px; }
+  @media (min-width: 910.5px) {
+    .newsletter--l {
+      max-width: 42.85714286%; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_back-to-top.scss */
+.back-to-top--l {
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 910.5px) {
+    .back-to-top--l {
+      max-width: 28.57142857%;
+      -webkit-flex-basis: 28.57142857%;
+          -ms-flex-preferred-size: 28.57142857%;
+              flex-basis: 28.57142857%; } }
+  @media (min-width: 1080.5px) {
+    .back-to-top--l {
+      margin-left: 14.28571429%;
+      -webkit-flex-basis: 14.28571429%;
+          -ms-flex-preferred-size: 14.28571429%;
+              flex-basis: 14.28571429%;
+      max-width: 14.28571429%; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_footer.scss */
+.footer {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_footer.scss */
+.footer--nav--l {
+  -webkit-flex-basis: 28.57142857%;
+      -ms-flex-preferred-size: 28.57142857%;
+          flex-basis: 28.57142857%;
+  padding-left: 13.5px;
+  padding-right: 13.5px; }
+  @media (min-width: 910.5px) {
+    .footer--nav--l {
+      max-width: 28.57142857%; } }
+
+/* line 15, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_footer.scss */
+.footer--nav--l .footer--col--l {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+  @media (min-width: 910.5px) {
+    .footer--nav--l .footer--col--l {
+      max-width: 50%; } }
+
+/* line 23, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_footer.scss */
+.footer--nav--l .footer--col--l:last-child {
+  padding-right: 13.5px; }
+
+@media (min-width: 1080.5px) {
+  .footer--nav--l .footer--col--l:last-child {
+    padding-left: 13.5px; } }
+
+/* line 33, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_footer.scss */
+.footer--col--l {
+  padding-top: 0.5em;
+  border-top: 1px solid #282832; }
+
+/* line 2, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_form.scss */
+.form--box input {
+  width: 100%;
+  margin-bottom: 9px; }
+/* line 7, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_form.scss */
+.form--box label {
+  line-height: 1.5; }
+@media (min-width: 1080.5px) {
+  .form--box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    /* line 15, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_form.scss */
+    .form--box input {
+      width: auto; }
+    /* line 19, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_form.scss */
+    .form--box p {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; } }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/modules/_footnotes.scss */
+#footnotes li a:last-child {
+  font-family: 'Helvetica Neue', Helvetica, arial, sans-serif; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/layouts/_layout.scss */
+.layout--main {
+  padding-top: 27px;
+  padding-bottom: 4.5em; }
+  @media (min-width: 600px) {
+    .layout--main {
+      margin-left: 167px; } }
+  /* line 9, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/layouts/_layout.scss */
+  .layout--main > .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  /* line 15, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/layouts/_layout.scss */
+  .layout--main main {
+    margin-bottom: 4.5em; }
+
+/* line 20, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/layouts/_layout.scss */
+.layout--gutter-bottom {
+  margin-bottom: 124.5px; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_cctv.scss */
+.clear-creek-transit-village .art {
+  display: none; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_cctv.scss */
+.clear-creek-transit-village {
+  background-color: #f2f2f2; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_joule.scss */
+.joule-solar-energy .art {
+  display: none; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_joule.scss */
+.joule-solar-energy {
+  background-color: #f3f3f3; }
+
+/* line 1, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_newsblock.scss */
+.newsblock .art {
+  display: none; }
+
+/* line 5, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_newsblock.scss */
+.newsblock {
+  background-color: #f7f7f7; }
+
+/* line 9, /Users/ianrose/Projects/ianrose-source/themes/waverly-theme/source/css/themes/_newsblock.scss */
+.newsblock figure img {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }

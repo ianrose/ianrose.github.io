@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Ian Rose]]></title>
+  <subtitle><![CDATA[Front-end Designer]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://ianrose.me/"/>
+  <updated>2015-10-05T12:29:40.000Z</updated>
+  <id>http://ianrose.me/</id>
+  
+  <author>
+    <name><![CDATA[Ian Rose]]></name>
+    <email><![CDATA[ian@ianrose.me]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Newsblock]]></title>
+    <link href="http://ianrose.me/2015/07/19/newsblock/"/>
+    <id>http://ianrose.me/2015/07/19/newsblock/</id>
+    <published>2015-07-19T18:20:41.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>A modern news aggregator that combines ‘topic relevance’ and ‘social trends’ to recommend the best stories.</p>
+<a id="more"></a>
+<figure class="media-full">
+<img src="/2015/07/19/newsblock/newsblock-desktop-lg-top.jpg" title="Homepage on Desktop">
+<figcaption>Common topics are presented in feeds that are easy and quick to scan.</figcaption>
+</figure>
+
+<figure>
+<img src="/2015/07/19/newsblock/newsblock-mobile-tablet.png" title="Screenshots of Responsive Pages">
+<figcaption>Get the same modern aggregator experience on any device that can access the internet.</figcaption>
+</figure>
+
+<figure class="media-full">
+<img src="/2015/07/19/newsblock/newsblock-desktop-story.jpg" title="Story Page">
+<figcaption>Story page provides a URL for the story and a place to discuss the content.</figcaption>
+</figure>
+
+<p><a href="http://getnewsblock.com" target="_blank" rel="external">Newsblock</a> is an ongoing experiment and collaboration created by myself and the talented developer <a href="http://bradoyler.com/" target="_blank" rel="external">Brad Oyler</a>.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>A modern news aggregator that combines ‘topic relevance’ and ‘social trends’ to recommend the best stories.</p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://ianrose.me/tags/code/"/>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="strategy" scheme="http://ianrose.me/tags/strategy/"/>
+    
+      <category term="work" scheme="http://ianrose.me/categories/work/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[The Too Good to Be True CSS Text Rendering Property]]></title>
+    <link href="http://ianrose.me/2015/01/22/the-too-good-to-be-true-css-text-rendering-property/"/>
+    <id>http://ianrose.me/2015/01/22/the-too-good-to-be-true-css-text-rendering-property/</id>
+    <published>2015-01-23T03:18:10.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>The CSS text rendering property is a mixed bag. On initial pass it seems to be an obvious choice for improving type on the web.</p>
+<a id="more"></a>
+<p>However after a bit of reading there are known <a href="https://github.com/h5bp/html5-boilerplate/issues/78" title="HTML5 Boilerplate GitHub" target="_blank" rel="external">bugs</a> in some <a href="https://code.google.com/p/chromium/issues/detail?id=114719" title="Chromium Issues" target="_blank" rel="external">browsers</a>, <a href="https://code.google.com/p/android/issues/detail?id=15067" title="Android Issues" target="_blank" rel="external">operating systems</a> and <a href="http://www.marco.org/2012/11/15/text-rendering-optimize-legibility" title="Marco.org" target="_blank" rel="external">performance issues</a> on Android and older versions of iOS.<sup><a href="#fn1">1</a></sup></p>
+<p>There are four values that text rendering can be set to <sup><a href="#fn2">2</a></sup>:</p>
+<ol>
+<li><code>auto</code>: The browser renders the text based on when to optimize for speed, legibility, and geometric precision.</li>
+<li><code>optimizeSpeed</code>: The browser renders text for speed over the other values. It disables kerning and ligatures.</li>
+<li><code>optimizeLegibility</code>: The browser renders text for legibility over the other values. This enables kerning and optional ligatures.</li>
+<li><code>geometricPrecision</code>: The browser renders text for geometric precision over rendering speed and legibility.</li>
+</ol>
+<p>So I’ve been playing around with just setting Legibility to headings and blockquotes. Keeping it to large sized and short pieces of text.</p>
+<ol id="footnotes">
+    <li id="fn1">Much of this research can be found at <a href="https://css-tricks.com/almanac/properties/t/text-rendering/" target="_blank" rel="external">css-tricks.com</a> by the always comprehensive Chris Coyier <a href="#ffn1">&#8617;</a></li>
+    <li id="fn2"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering</a> <a href="#ffn2">&#8617;</a></li>
+</ol>]]></content>
+    <summary type="html">
+    <![CDATA[<p>The CSS text rendering property is a mixed bag. On initial pass it seems to be an obvious choice for improving type on the web.</p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://ianrose.me/tags/code/"/>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="notes" scheme="http://ianrose.me/categories/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Getting Posts by Category with Hexo]]></title>
+    <link href="http://ianrose.me/2015/01/20/getting-posts-by-category-with-hexo/"/>
+    <id>http://ianrose.me/2015/01/20/getting-posts-by-category-with-hexo/</id>
+    <published>2015-01-21T01:39:15.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>While building with Hexo I came across a need to get all the posts by a specific category and render them through a specific partial.</p>
+<a id="more"></a>
+<p>Hexo is great open source project in many ways. However due to language barriers the English documentation needs help from the project’s community. Myself included. Skip right to the <a href="#The_Solution">solution</a>.</p>
+<h2 id="The_Scenario">The Scenario</h2><p>Let’s say we have two categories, “Articles” and “Projects”. You have created three posts categorized as “Articles” and three posts categorized as “Projects”. On the homepage you want to display all the “Article” posts with a headline and excerpt text. Then in another column you want to display all the “Project” posts with a headline and a large image.</p>
+<p>At first I could not find an example of this scenario anywhere, in the <a href="http://hexo.io/docs/" title="Hexo Docs" target="_blank" rel="external">documentation</a>, <a href="https://github.com/hexojs/hexo/issues/976" title="My GitHub Issue" target="_blank" rel="external">GitHub issues</a>, or countless Google Searches.</p>
+<p>The challenge it turned out was not the lack of functionality with Hexo it was parsing through the docs, repositories and using Google translate.</p>
+<h2 id="The_Solution">The Solution</h2><p>Thanks to <a href="http://bradoyler.com/" title="Brad Oyler&#39;s website" target="_blank" rel="external">Brad Oyler</a> for pairing up with me to figure this out. Hexo does offer <a href="http://hexo.io/docs/helpers.html" target="_blank" rel="external">helpers</a> that leverage its API. The helper, <code>get_posts</code> is the one to use.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;% get_posts(</span><br><span class="line">  count: 3,</span><br><span class="line">  orderby: "updated",</span><br><span class="line">  order: -1,</span><br><span class="line">  query: categories: ‘projects’</span><br><span class="line">  &#125;).each(function(post)  %&gt;</span><br><span class="line">    &lt;%- partial('_partial/index-post', post: post, index: true) %&gt; </span><br><span class="line">&lt;% &#125;) %&gt;</span><br></pre></td></tr></table></figure>
+<p>The <code>query</code> option is the key to all this and knowing to pass <code>categories: &#39;projects&#39;</code> did the trick.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>While building with Hexo I came across a need to get all the posts by a specific category and render them through a specific partial.</p>]]>
+    
+    </summary>
+    
+      <category term="notes" scheme="http://ianrose.me/categories/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Typesettings]]></title>
+    <link href="http://ianrose.me/2014/12/30/typesettings/"/>
+    <id>http://ianrose.me/2014/12/30/typesettings/</id>
+    <published>2014-12-30T22:20:41.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>A CSS preprocessor toolkit that helps set type and elements in Ems with modular scale, vertical rhythm, and responsive ratio based headlines.</p>
+<a id="more"></a>
+<p>Typesettings provides a designer or developer a toolkit of Sass or Stylus functions and mixins that make setting nice type on the web easier.</p>
+<h2 id="What_Does_It_Solve">What Does It Solve</h2><blockquote class="pullquote left"><p>“Default styles to make creating nice type even easier”</p>
+</blockquote>
+<p>The math involved in setting type both in size and space is not overly complex. However it can become very tedious. This toolkit, along with others, leverages the ability of a CSS preprocessors to calculate numbers combined with functions to remove that tedious work. Typesettings also provides optional default styles to make creating nice type even easier.</p>
+<h2 id="Why_Another_Type_Toolkit">Why Another Type Toolkit</h2><p>Typesettings’ is unique because of its ability to have padding, margin, and font size set in Ems and have borders set in pixels all while maintaing vertical rythm. The toolkit does this by converting an entered pixel border width into Ems and subtracts that value from the padding of the element.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>A CSS preprocessor toolkit that helps set type and elements in Ems with modular scale, vertical rhythm, and responsive ratio based headlines.</p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://ianrose.me/tags/code/"/>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="work" scheme="http://ianrose.me/categories/work/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Organizing Styles When Using Typesettings]]></title>
+    <link href="http://ianrose.me/2014/05/01/organizing-styles-when-using-typesettings/"/>
+    <id>http://ianrose.me/2014/05/01/organizing-styles-when-using-typesettings/</id>
+    <published>2014-05-01T21:19:25.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>At work I’ve been cranking on a prototype. I decided to give a Typesettings a go in more of a production setting that required designing in the browser. Overall the experience has been pretty good.</p>
+<a id="more"></a>
+<p>As the prototype started to get more complicated the need to break things into “modules” became apparent. Since <a href="http://typesettings.io" target="_blank" rel="external">Typesettings</a> uses Ems I needed settings to quickly adjust specific modules. The solution uses Sass variables in a very simple way. At the top of the partial for the module I set “font size context” variables for the different sizes. This makes it easy to maintain the mixins and functions for that specific module:</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This is part of the _btn.scss</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Provides two different size buttons set in Ems that</span></span><br><span class="line"><span class="comment">// have the same amount of padding with pixel borders.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// [1] &amp; [2] For the small button sets padding to</span></span><br><span class="line"><span class="comment">// 2 * $base-vertical-unit, which would be 12px in Ems.</span></span><br><span class="line"><span class="comment">// The small font size context variable is passed.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// [3] &amp; [4] For the small button sets border top and</span></span><br><span class="line"><span class="comment">// bottom to 1px with (1 * $base-vertical-unit) - 1px.</span></span><br><span class="line"><span class="comment">// Which comes out to 1px border and 5px (in Ems) padding.</span></span><br><span class="line"><span class="comment">// The small font size context variable is passed.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// [5] &amp; [6] For the medium button sets padding to</span></span><br><span class="line"><span class="comment">// 2 * $base-vertical-unit, which would be 12px in Ems.</span></span><br><span class="line"><span class="comment">// The medium font size context variable is passed.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// [7] &amp; [8] For the medium button sets border top and</span></span><br><span class="line"><span class="comment">// bottom to 1px with (1 * $base-vertical-unit) - 1px.</span></span><br><span class="line"><span class="comment">// Which comes out to 1px border and 5px (in Ems) padding.</span></span><br><span class="line"><span class="comment">// The medium font size context variable is passed.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Font size context variable using a modular scale value</span></span><br><span class="line"><span class="variable">$btn_sm-font-size</span><span class="value">: <span class="variable">$ms-down3</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Font size context variable using a modular scale value</span></span><br><span class="line"><span class="variable">$btn_md-font-size</span><span class="value">: <span class="variable">$ms-down1</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.btn</span> &#123;</span><br><span class="line">  <span class="attribute">display</span><span class="value">: inline-block;</span></span><br><span class="line">  <span class="attribute">text-align</span><span class="value">: center;</span></span><br><span class="line">  <span class="attribute">text-transform</span><span class="value">: uppercase;</span></span><br><span class="line">  <span class="attribute">vertical-align</span><span class="value">: middle;</span></span><br><span class="line">  <span class="attribute">cursor</span><span class="value">: pointer;</span></span><br><span class="line">  <span class="attribute">background-image</span><span class="value">: none;</span></span><br><span class="line">  <span class="attribute">background-color</span><span class="value">: transparent;</span></span><br><span class="line">  <span class="attribute">white-space</span><span class="value">: nowrap;</span></span><br><span class="line">  <span class="attribute">border-radius</span><span class="value">: <span class="number">3px</span>;</span></span><br><span class="line">  <span class="attribute">text-decoration</span><span class="value">: none;</span></span><br><span class="line">  <span class="attribute">font-family</span><span class="value">: <span class="variable">$font-sans-semibold</span>;</span></span><br><span class="line">  user-<span class="tag">select</span><span class="value">: none;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.btn_sm</span> &#123;</span><br><span class="line">  <span class="comment">// Sets the font size and line height</span></span><br><span class="line">  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> setType</span>(<span class="number">3</span>, <span class="variable">$btn_sm-font-size</span>);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.btn_md</span> &#123;</span><br><span class="line"> <span class="comment">// Sets the font size and line height</span></span><br><span class="line">  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> setType</span>(<span class="number">3</span>, <span class="variable">$btn_md-font-size</span>);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.btn_default</span> &#123;</span><br><span class="line">  <span class="attribute">color</span><span class="value">: <span class="variable">$light-blue</span>;</span></span><br><span class="line">  <span class="attribute">border-right-width</span><span class="value">: <span class="number">1px</span>;</span></span><br><span class="line">  <span class="attribute">border-left-width</span><span class="value">: <span class="number">1px</span>;</span></span><br><span class="line">  <span class="attribute">border-style</span><span class="value">: solid;</span></span><br><span class="line">  <span class="attribute">border-color</span><span class="value">: <span class="variable">$light-blue</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.btn_sm</span><span class="class">.btn_default</span> &#123;</span><br><span class="line">  <span class="attribute">padding-right</span><span class="value">: <span class="function">emRhythm</span>(<span class="number">2</span>, <span class="variable">$btn_sm-font-size</span>);</span><span class="comment">//[1]</span></span><br><span class="line">  <span class="attribute">padding-left</span><span class="value">: <span class="function">emRhythm</span>(<span class="number">2</span>, <span class="variable">$btn_sm-font-size</span>);</span><span class="comment">//[2]</span></span><br><span class="line">  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> rhythmBorderTop</span>(<span class="number">1px</span>,<span class="preprocessor"> 1</span>, <span class="variable">$btn_sm-font-size</span>);</span><span class="comment">//[3]</span></span><br><span class="line">  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> rhythmBorderBottom</span>(<span class="number">1px</span>,<span class="preprocessor"> 1</span>, <span class="variable">$btn_sm-font-size</span>);</span><span class="comment">//[4]</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class">.btn_md</span><span class="class">.btn_default</span> &#123;</span><br><span class="line">  <span class="attribute">padding-right</span><span class="value">: <span class="function">emRhythm</span>(<span class="number">2</span>, <span class="variable">$btn_md-font-size</span>);</span><span class="comment">//[5]</span></span><br><span class="line">  <span class="attribute">padding-left</span><span class="value">: <span class="function">emRhythm</span>(<span class="number">2</span>, <span class="variable">$btn_md-font-size</span>);</span><span class="comment">//[6]</span></span><br><span class="line">  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> rhythmBorderTop</span>(<span class="number">1px</span>,<span class="preprocessor"> 1</span>, <span class="variable">$btn_md-font-size</span>);</span><span class="comment">//[7]</span></span><br><span class="line">  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> rhythmBorderBottom</span>(<span class="number">1px</span>,<span class="preprocessor"> 1</span>, <span class="variable">$btn_md-font-size</span>);</span><span class="comment">//[8]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Again nothing too crazy or clever. Just an easy to adjust and understand use of Sass variables.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>At work I’ve been cranking on a prototype. I decided to give a Typesettings a go in more of a production setting that required designing in the browser. Overall the experience has been pretty good.</p>]]>
+    
+    </summary>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="articles" scheme="http://ianrose.me/categories/articles/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Permanent Redirect GitHub Project Page to Custom Domain]]></title>
+    <link href="http://ianrose.me/2014/03/30/permanent-rediect-github-project-page/"/>
+    <id>http://ianrose.me/2014/03/30/permanent-rediect-github-project-page/</id>
+    <published>2014-03-30T21:20:20.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>How to get a GitHub hosted project site to 301 redirect to a custom domain name using CloudFlare.</p>
+<a id="more"></a>
+<p>The setup, you have your personal page at username.github.io with a custom domain, like custom.me. You have also created a project page for one of your repositories that by default would exist at custom.me/projectname.</p>
+<p>This is assuming you have <code>projectname.io</code> already setup with the proper CNAME in the root of your site and your DNS working using CloudFlare.</p>
+<p>Please note that the information below is just from trial and error and a whole bunch of Google searching. If you have any expertise and see any errors please let me know.</p>
+<h2 id="A_Less_Than_Ideal_Solution">A Less Than Ideal Solution</h2><p>GitHub Pages doesn’t offer any sort ability to setup redirects. So one option is to use JavaScript to do the redirect:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">window</span>.location.href.indexOf(<span class="string">'http://custom.me'</span>) === <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">window</span>.location.href = <span class="string">'http://projectname.io'</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Then use a meta tag to help search engines:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"canonical"</span> <span class="attribute">href</span>=<span class="value">"http://projectname.io"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>If you are using Jekyll for example you could make that bit more flexible:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">window</span>.location.href.indexOf(<span class="string">'http://custom.me'</span>) === <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">window</span>.location.href = <span class="string">'http://projectname.io&#123;&#123; page.url &#125;&#125;'</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"canonical"</span> <span class="attribute">href</span>=<span class="value">"http://projectname.io&#123;&#123; page.url &#125;&#125;"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="A_Much_Better_Solution">A Much Better Solution</h2><p>If you are using CloudFlare for your statically hosted blog great! If not, it is worth checking out. It provides two great features right off the bat. It puts all your assets in a CDN and allows you to setup 301 redirects. CloudFlare is also rolling out what they call CNAME flattening which should help with the 302 errors that occur when using an apex domain on GitHub Pages.</p>
+<p>To setup the 301 redirect for your custom URL project page first you need to login to CloudFlare. Go to your Websites, click the gear icon then select Page rules.</p>
+<p>You are going to Add new rule with Forwarding turned on. The URL pattern you enter would be something like, <code>custom.me/projectname/*</code>. Then the destination URL would be something like, <code>http://projectname.io/$1</code>.</p>
+<p>Set Forwarding type to Permanent - 301 and click Add rule to apply your new redirect.</p>
+<p>This nicer setup is directly taken from a great <a href="http://www.higherorderheroku.com/articles/cloudflare-dns-heroku/" target="_blank" rel="external">post at Higher Order Heroku</a>. The post goes into how to setup an apex domain using a CNAME. This looks to be an older setup that could be done instead of doing the newer “CNAME flattening”.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>How to get a GitHub hosted project site to 301 redirect to a custom domain name using CloudFlare.</p>]]>
+    
+    </summary>
+    
+      <category term="articles" scheme="http://ianrose.me/categories/articles/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[A Sass Type Toolkit: Typesettings]]></title>
+    <link href="http://ianrose.me/2014/03/24/sass-type-toolkit-typesettings/"/>
+    <id>http://ianrose.me/2014/03/24/sass-type-toolkit-typesettings/</id>
+    <published>2014-03-24T21:20:30.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>Setting type using modular scale and maintaining vertical rhythm is not a new topic, at all. There are so many great tools and articles out there that help designers do these things. However I couldn’t find exactly what I was looking for.</p>
+<a id="more"></a>
+<p>So I created <a href="http://typesettings.io" target="_blank" rel="external">Typesettings</a>. I wanted a tool that only had one dependency and that dependency is Sass. There are some incredibly smart and effective tools out there. However I have experienced the pain of updating one Gem to have another Gem not work. So I wanted to remove that potential pain point for setting type.</p>
+<p>Typesettings is also an experiment in trying to use more Sass functions with vanilla CSS. In a team environment I’ve seen mixins get used and abused. Where a designer uses a <code>@mixin</code> then writes additional styles to overwrite the styles generated by the mixin. Granted this is not the fault of the mixin author but I did think about how in the end the Sass is complied into vanilla CSS. So with Typesettings I’m playing around with trying to find a nice mix of the DRY principle and not abstracting too much. This is still a work in progress.</p>
+<p>Lately the use of REMs as the go to unit for setting type I think is a little much. In recent projects I’ve had times where having the type set in REMs made things just as inflexible as if it were set in pixels. Jeremy Brunch has a <a href="http://j.eremy.net/confused-about-rem-and-em/" target="_blank" rel="external">great post</a> about when to use different units. So I wanted to see if I could figure out a toolkit that could use Ems and handle the math for the compounding effect. Thanks to Sass this is possible. I definitely looked at what <a href="http://compass-style.org/reference/compass/typography/vertical_rhythm/" target="_blank" rel="external">Compass</a> does for this concept.</p>
+<blockquote class="pullquote left"><p>“Setting type on a baseline is not complicated.”</p>
+</blockquote>
+<p>Setting type on a baseline is not complicated. For me, setting <strong>every</strong> element on a page to land on the baseline is not as simple. Many posts explain how to setup vertical rhythm using the <code>line-height</code> value of the body type. Few explain how to set every element on the page on the baseline. The <code>line-height</code> is often a value around <code>24px</code> which does not provide the ability to fine-tune a UI. <a href="http://sass.fffunction.co/" target="_blank" rel="external">Sassaparilla</a> has the great idea of setting a base vertical unit to a much smaller value to allow designers to setup a layout where all elements land on a baseline. The base vertical unit is also used to set the body type <code>line-height</code> This concept can be found in Typesettings.</p>
+<p>The one feature that I think is unique (my Google-fu may be weak) to Typesettings is the ability to have padding, margin, and font size set in Ems and have borders set in pixels while still maintaing vertical rhythm. Typesettings converts the pixel border width into Ems and subtracts that from the padding of the element. It then sets a border with a pixel value.</p>
+<p>I plan on going into detail about the these and the remaining features of Typesettings in additional posts.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Setting type using modular scale and maintaining vertical rhythm is not a new topic, at all. There are so many great tools and articles out there that help designers do these things. However I couldn’t find exactly what I was looking for.</p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://ianrose.me/tags/code/"/>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="articles" scheme="http://ianrose.me/categories/articles/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Joule Solar Energy]]></title>
+    <link href="http://ianrose.me/2013/02/06/joule-solar-energy/"/>
+    <id>http://ianrose.me/2013/02/06/joule-solar-energy/</id>
+    <published>2013-02-06T22:20:41.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>Joule Solar Energy needed a consumer facing website that worked across devices to attract new customers and provide resources for current customers.</p>
+<a id="more"></a>
+<figure class="media-full">
+<img src="/2013/02/06/joule-solar-energy/joule-desktop-home.jpg" title="Homepage on Desktop">
+<figcaption>Homepage that quickly surfaced the information current customers and potential customers were looking for.</figcaption>
+</figure>
+
+<figure>
+<img src="/2013/02/06/joule-solar-energy/joule-mobile-tablet-home.png" title="Screenshots of Responsive Home Page">
+<figcaption>The site was built to be responsive to allow users to access information on any device.</figcaption>
+</figure>
+
+<figure class="media-full">
+<img src="/2013/02/06/joule-solar-energy/joule-desktop-residential.jpg" title="Residential Page">
+<figcaption>Internal pages provided detailed information for specific segments of solar energy.</figcaption>
+</figure>
+
+<p>I was responsible for the design, content strategy, front-end development and client relations while at <a href="http://thinkabig.com/" target="_blank" rel="external">Thinka</a>.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Joule Solar Energy needed a consumer facing website that worked across devices to attract new customers and provide resources for current customers.</p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://ianrose.me/tags/code/"/>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="work" scheme="http://ianrose.me/categories/work/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Clear Creek Transit Village]]></title>
+    <link href="http://ianrose.me/2013/01/16/clear-creek-transit-village/"/>
+    <id>http://ianrose.me/2013/01/16/clear-creek-transit-village/</id>
+    <published>2013-01-16T22:20:41.000Z</published>
+    <updated>2015-10-05T12:29:40.000Z</updated>
+    <content type="html"><![CDATA[<p>Clear Creek Transit Village needed a brochure site to help attract investors and provide resources for the CCTV development team.</p>
+<a id="more"></a>
+<figure class="media-full">
+<img src="/2013/01/16/clear-creek-transit-village/cctv-home.jpg" title="CCTV Homepage">
+<figcaption>Home page that provided an overview of the development opportunity.</figcaption>
+</figure>
+
+<figure>
+<img src="/2013/01/16/clear-creek-transit-village/cctv-resources.jpg" title="Resources Page">
+<figcaption>A password protected resource page with renderings, maps and zoning documents for CCTV.</figcaption>
+</figure>
+
+<figure class="media-full">
+<img src="/2013/01/16/clear-creek-transit-village/cctv-what-is-tod.jpg" title="What is TOD Page">
+<figcaption>The page provided the what and why of a Transit Oriented Development to potential investors.</figcaption>
+</figure>
+
+<p>I was responsible for the design, content strategy, front-end and back-end development and client relations while at <a href="http://thinkabig.com/" target="_blank" rel="external">Thinka</a>.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Clear Creek Transit Village needed a brochure site to help attract investors and provide resources for the CCTV development team.</p>]]>
+    
+    </summary>
+    
+      <category term="code" scheme="http://ianrose.me/tags/code/"/>
+    
+      <category term="design" scheme="http://ianrose.me/tags/design/"/>
+    
+      <category term="work" scheme="http://ianrose.me/categories/work/"/>
+    
+  </entry>
+  
+</feed>

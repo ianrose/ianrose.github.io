@@ -1,0 +1,81 @@
+<h1 id="Typesettings">Typesettings</h1><p>Set your type in Ems with modular scale, vertical rhythm, and responsive ratio based headlines using Sass. <strong>Why create another type toolkit in Sass?</strong> I wanted to and I couldn’t find exactly what I was looking for. Typesettings uses techniques from many different amazing tools while trying to keep it simple.</p>
+<ul>
+<li>Its only dependency is Sass</li>
+<li>It uses Ems not REMs or pixels</li>
+<li>Handles all the math for Ems including the compounding</li>
+<li>It maintains vertical rhythm with pixel based borders using padding set in Ems</li>
+<li>It comes with a default 6px baseline to maintain rhythm on all block elements</li>
+<li>It relies more on using Sass functions combined with vanilla CSS rules rather than mixins to style</li>
+<li>It uses modular scale values to set font-size</li>
+<li>It has optional default type styles that includes settings for adjusting headlines based on screen width</li>
+</ul>
+<h2 id="How_to_setup">How to setup</h2><p>There are three ways you can download Typesettings.</p>
+<ul>
+<li><a href="https://github.com/ianrose/typesettings/releases/latest">Download the latest release</a></li>
+<li>Clone the repo: <code>git clone https://github.com/ianrose/typesettings.git</code></li>
+<li>Install with <a href="http://bower.io/">Bower</a>: <code>bower install typesettings --save-dev</code></li>
+</ul>
+<p>To start using Typesettings <code>@import</code> the <code>_typesettings.scss</code> partial into your Sass project after your CSS reset.</p>
+<pre><code class="scss"><span class="at_rule">@<span class="keyword">import</span> <span class="string">"path/your-reset"</span>;</span>
+
+<span class="comment">// Your settings for Typesettings :)</span>
+<span class="variable">$font-sans</span><span class="value">: <span class="string">'Helvetica Neue'</span>, Helvetica, Arial, sans-serif;</span>
+<span class="variable">$font-serif</span><span class="value">: Georgia, <span class="string">'Times New Roman'</span>, serif;</span>
+<span class="variable">$font-mono</span><span class="value">: <span class="string">'Lucida Console'</span>, Monaco, monospace;</span>
+<span class="variable">$text-color</span><span class="value">: <span class="hexcolor">#000</span>;</span>
+<span class="variable">$base-vertical-unit</span><span class="value">: <span class="number">6px</span>;</span>
+<span class="variable">$base-line-multi</span><span class="value">: <span class="number">4</span>;</span>
+<span class="variable">$base-font-size</span><span class="value">: <span class="number">16px</span>;</span>
+<span class="variable">$ms-ratio</span><span class="value">: <span class="number">1.414</span>;</span>
+<span class="variable">$paragraph-indent</span><span class="value">: true;</span>
+<span class="variable">$paragraph-justify</span><span class="value">: true;</span>
+<span class="variable">$load-typesetted</span><span class="value">: true;</span>
+
+<span class="at_rule">@<span class="keyword">import</span> <span class="string">"path/typesettings"</span>;</span> <span class="comment">// Here is the _typesettings.scss partial</span>
+
+<span class="at_rule">@<span class="keyword">import</span> <span class="string">"path/your-styles"</span>;</span>
+</code></pre>
+<h2 id="How_to_use">How to use</h2><p>After Typesettings is setup in your project the default type styles should be looking good. However I bet you want to use modular scale and vertical rhythm in the rest of your project. Here is an example of how to do that:</p>
+<p>The Scss:</p>
+<pre><code class="scss"><span class="comment">// This example is using Typesettings' default settings</span>
+<span class="comment">// [1] 3 times the baseline grid value for margin-bottom.</span>
+<span class="comment">// The second argument is the context font-size. In this case it is 1 step down in</span>
+<span class="comment">// the modular scale.</span>
+<span class="comment">//</span>
+<span class="comment">// [2] Using an optional mixin, a 2px border bottom is set with padding bottom</span>
+<span class="comment">// set to 3 times the baseline grid with 2px subtracted. By subtracting the 2px from</span>
+<span class="comment">// the padding bottom, vertical rhythm is maintained.</span>
+<span class="comment">//</span>
+<span class="comment">// [3] Using an optional mixin, the line-height is set to 3 * baseline grid. Then</span>
+<span class="comment">// the font-size is passed using our modular scale value.</span>
+<span class="class">.your-module</span> {
+   <span class="attribute">margin-bottom</span><span class="value">: <span class="function">emRhythm</span>(<span class="number">3</span>, <span class="variable">$ms-down1</span>);</span> <span class="comment">// [1]</span>
+   <span class="attribute">border-color</span><span class="value">: <span class="hexcolor">#000</span>;</span>
+   <span class="attribute">border-style</span><span class="value">: solid;</span>
+   <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> rhythmBorderBottom</span>(<span class="number">2px</span>,<span class="preprocessor"> 3</span>, <span class="variable">$ms-down1</span>);</span> <span class="comment">// [2]</span>
+   <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> setType</span>(<span class="number">3</span>, <span class="variable">$ms-down1</span>);</span> <span class="comment">// [3]</span>
+}
+</code></pre>
+<p>The outputted CSS:</p>
+<pre><code class="css"><span class="class">.your-module</span> <span class="rules">{
+    <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> <span class="number">1.59075em</span></span></span>; <span class="comment">/* 18px */</span>
+    <span class="rule"><span class="attribute">border-color</span>:<span class="value"> <span class="hexcolor">#000</span></span></span>;
+    <span class="rule"><span class="attribute">border-style</span>:<span class="value"> solid</span></span>;
+    <span class="rule"><span class="attribute">border-bottom-width</span>:<span class="value"> <span class="number">2px</span></span></span>;
+    <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"> <span class="number">1.414em</span></span></span>; <span class="comment">/* 16px */</span>
+    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.70721em</span></span></span>;
+    <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">1.59075</span></span></span>; <span class="comment">/* 18px (Okay, not pixel perfect, 17.9999999999px) */</span>
+}</span>
+</code></pre>
+<p>You can also look at the <a href="https://github.com/ianrose/typesettings-site">source code</a> of the document site to see how it was made using Typesettings.</p>
+<h2 id="Requirements">Requirements</h2><p>Sass, that’s it.</p>
+<h2 id="Precision">Precision</h2><p>Typesettings uses relative units and many of the values outputted are a result of dividing and multiplying. So a computed pixel value like <code>17.999999px</code> will sometimes happen.</p>
+<h2 id="Thanks_and_Resources">Thanks and Resources</h2><ul>
+<li><a href="https://github.com/johngerome">@johngerom</a>: <a href="https://github.com/ianrose/typesettings/blob/master/_typesettings.styl">Stylus version</a></li>
+<li><a href="http://type-scale.com/">Type-scale.com</a></li>
+<li><a href="https://github.com/typeplate/typeplate.github.io">Typeplate</a></li>
+<li><a href="https://github.com/csswizardry/typecsset">Typecsset</a></li>
+<li><a href="https://github.com/chriseppstein/compass">Compass</a></li>
+<li><a href="http://sass.fffunction.co/">Sassaparilla</a></li>
+</ul>
+<h2 id="License">License</h2><p><a href="https://github.com/ianrose/typesettings/blob/master/LICENSE">The MIT License (MIT)</a></p>
